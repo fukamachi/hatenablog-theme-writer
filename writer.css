@@ -96,12 +96,12 @@ section {
   font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
 }
 :root * > .entry-inner:after {
-  background: rgba(255, 255, 255, 0);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ffffff), color-stop(1, rgba(255, 255, 255, 0)));
-  background: -ms-linear-gradient(bottom, #ffffff, rgba(255, 255, 255, 0));
-  background: -moz-linear-gradient(center bottom, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  background: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #ffffff), color-stop(1, rgba(255, 255, 255, 0)));
+  background: -ms-linear-gradient(left, #ffffff, rgba(255, 255, 255, 0));
+  background: -moz-linear-gradient(left, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
   background: -o-linear-gradient(rgba(255, 255, 255, 0), #ffffff);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(255, 255, 255, 0)', endColorstr='#ffffff', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(255, 255, 255, 0)', endColorstr='#ffffff', GradientType=1);
   content: '';
   position: absolute;
   top: 0;

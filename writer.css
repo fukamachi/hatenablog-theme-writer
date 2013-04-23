@@ -16,6 +16,10 @@ nav,
 section {
   display: block;
 }
+/* ===== GLOBAL HEADER ===== */
+#globalheader-container {
+  background: rgba(255, 255, 255, 0.3);
+}
 /* ===== PAGE CONTAINER ===== */
 #container {
   width: auto;
@@ -98,24 +102,8 @@ section {
   -webkit-writing-mode: vertical-rl;
   -o-writing-mode: vertical-rl;
   font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
-}
-:root * > .entry-inner:after {
-  background: #ffffff;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0, #ffffff), color-stop(1, rgba(255, 255, 255, 0)));
-  background: -ms-linear-gradient(left, #ffffff, rgba(255, 255, 255, 0));
-  background: -moz-linear-gradient(left, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
-  background: -o-linear-gradient(rgba(255, 255, 255, 0), #ffffff);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(255, 255, 255, 0)', endColorstr='#ffffff', GradientType=1);
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -5px;
-  width: 30px;
-  height: 100%;
-}
-:root * > .entry-inner:after,
-:root * > .entry-inner:after x:-moz-any-link {
-  background: none !important;
+  -webkit-background-clip: text;
+  background-image: -webkit-linear-gradient(right, #000000 0, #000000 690px, rgba(0, 0, 0, 0.30000000000000004));
 }
 .entry-inner,
 .entry-inner x:-moz-any-link {
@@ -168,6 +156,7 @@ section {
 .entry-content {
   margin-right: 10px;
   line-height: 1.7;
+  -webkit-text-fill-color: transparent;
 }
 .entry-content .footnote {
   margin-top: 3em;

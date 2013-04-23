@@ -13,6 +13,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* ===== GLOBAL HEADER ===== */
+#globalheader-container {
+  background: rgba(255, 255, 255, 0.3);
+}
+
 /* ===== PAGE CONTAINER ===== */
 #container {
   width: auto;
@@ -104,20 +109,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     overflow-x: auto;
     .writing-mode(vertical-rl);
     font-family: @font-family;
-
-    &:after {
-      .gradient-h(#fff, rgba(255, 255, 255, 80), rgba(255, 255, 255, 0));
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -5px;
-      width: 30px;
-      height: 100%;
-
-      &, x:-moz-any-link { // for Firefox
-        background: none !important;
-      }
-    }
+    -webkit-background-clip: text;
+    background-image: -webkit-linear-gradient(right, @font-color 0, @font-color @vertical-width - 30px, fadeout(@font-color, 70%));
   }
 
   &, x:-moz-any-link { // for Firefox
@@ -180,6 +173,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .entry-content {
   margin-right: 10px;
   line-height: 1.7;
+  -webkit-text-fill-color: transparent;
 
   .footnote {
     margin-top: 3em;

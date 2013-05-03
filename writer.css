@@ -20,6 +20,95 @@ section {
 #globalheader-container {
   background: rgba(255, 255, 255, 0.3);
 }
+.globalheader-fadein 0% {
+  display: none;
+  opacity: 0;
+}
+.globalheader-fadein 60% {
+  display: block;
+  opacity: 0;
+}
+.globalheader-fadein 100% {
+  display: block;
+  opacity: 1;
+}
+@-webkit-keyframes globalheader-fadein {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  60% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@-moz-keyframes globalheader-fadein {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  60% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@-ms-keyframes globalheader-fadein {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  60% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@-o-keyframes globalheader-fadein {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  60% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@keyframes globalheader-fadein {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  60% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+#globalheader-container,
+.btn-subscribe {
+  -webkit-animation-name: globalheader-fadein;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+}
 /* ===== PAGE CONTAINER ===== */
 #container {
   width: auto;
@@ -49,7 +138,7 @@ section {
   top: 15px;
 }
 #blog-title-inner {
-  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, Times, "Times New Roman", 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
 }
 #blog-title h1 {
   text-shadow: none;
@@ -101,15 +190,38 @@ section {
   -moz-writing-mode: vertical-rl;
   -webkit-writing-mode: vertical-rl;
   -o-writing-mode: vertical-rl;
-  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, Times, "Times New Roman", 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
   -webkit-background-clip: text;
-  background-image: -webkit-linear-gradient(right, #000000 0, #000000 690px, rgba(0, 0, 0, 0.30000000000000004));
+  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.30000000000000004) 0, #000000 30px, #000000 690px, rgba(0, 0, 0, 0.30000000000000004));
 }
 .entry-inner,
 .entry-inner x:-moz-any-link {
   width: 620px !important;
   height: auto !important;
   overflow: visible !important;
+}
+/* ===== ASIN ===== */
+.hatena-asin-detail p {
+  text-indent: 0 !important;
+}
+:root * > .hatena-asin-detail {
+  margin: 0;
+}
+.hatena-asin-detail,
+.hatena-asin-detail x:-moz-any-link {
+  margin: 1em 0;
+}
+:root * > .hatena-asin-detail .hatena-asin-detail-image {
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.hatena-asin-detail .hatena-asin-detail-image,
+.hatena-asin-detail .hatena-asin-detail-image x:-moz-any-link {
+  margin-bottom: 0 !important;
+  margin-right: 15px !important;
+}
+.hatena-asin-detail ul {
+  margin: 0 !important;
 }
 /* ===== ENTRY HEADER ===== */
 .entry-header .date {
@@ -156,6 +268,8 @@ section {
 .entry-content {
   margin-right: 10px;
   line-height: 1.7;
+}
+.entry-content p {
   -webkit-text-fill-color: transparent;
 }
 .entry-content .footnote {
@@ -181,13 +295,6 @@ section {
 }
 .entry-footer .entry-footer-section {
   margin: 0 15px;
-}
-:root * > .entry-footer {
-  padding-left: 50px;
-}
-.entry-footer,
-.entry-footer x:-moz-any-link {
-  padding-left: 0 !important;
 }
 :root * > .entry-footer .comment {
   margin-left: 15px;
@@ -267,6 +374,14 @@ div#google_afc_user x:-moz-any-link {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
+/* ===== STAR ===== */
+:root * > .hatena-star-container {
+  margin-top: 0 !important;
+}
+.hatena-star-container,
+.hatena-star-container x:-moz-any-link {
+  margin-top: 10px !important;
+}
 /* ===== ELEMENTS IN ENTRY ===== */
 .entry-content h1,
 .entry-content h2,
@@ -302,7 +417,7 @@ div#google_afc_user x:-moz-any-link {
   margin: 1em;
 }
 .entry-content .entry blockquote {
-  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, Times, "Times New Roman", 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
   border: none;
   margin-left: 0;
   margin-top: 1em;

@@ -18,6 +18,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background: rgba(255, 255, 255, 0.3);
 }
 
+.globalheader-fadein {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  60% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes globalheader-fadein { .globalheader-fadein }
+@-moz-keyframes    globalheader-fadein { .globalheader-fadein }
+@-ms-keyframes     globalheader-fadein { .globalheader-fadein }
+@-o-keyframes      globalheader-fadein { .globalheader-fadein }
+@keyframes         globalheader-fadein { .globalheader-fadein }
+
+#globalheader-container, .btn-subscribe {
+  -webkit-animation-name: globalheader-fadein;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+}
+
 /* ===== PAGE CONTAINER ===== */
 #container {
   width: auto;
@@ -110,13 +140,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     .writing-mode(vertical-rl);
     font-family: @font-family;
     -webkit-background-clip: text;
-    background-image: -webkit-linear-gradient(right, @font-color 0, @font-color @vertical-width - 30px, fadeout(@font-color, 70%));
+    background-image: -webkit-linear-gradient(right, fadeout(@font-color, 70%) 0, @font-color 30px, @font-color @vertical-width - 30px, fadeout(@font-color, 70%));
   }
 
   &, x:-moz-any-link { // for Firefox
     width: @horizontal-width !important;
     height: auto !important;
     overflow: visible !important;
+  }
+}
+
+/* ===== ASIN ===== */
+.hatena-asin-detail {
+  p {
+    text-indent: 0 !important;
+  }
+  :root *> & { // except for IE6-8
+    margin: 0;
+  }
+  &, x:-moz-any-link { // for Firefox
+    margin: 1em 0;
+  }
+  .hatena-asin-detail-image {
+    :root *> & { // except for IE6-8
+      margin-right: 10px;
+      margin-bottom: 15px;
+    }
+    &, x:-moz-any-link { // for Firefox
+      margin-bottom: 0 !important;
+      margin-right: 15px !important;
+    }
+  }
+  ul {
+    margin: 0 !important;
   }
 }
 
@@ -173,7 +229,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .entry-content {
   margin-right: 10px;
   line-height: 1.7;
-  -webkit-text-fill-color: transparent;
+
+  p {
+    -webkit-text-fill-color: transparent;
+  }
 
   .footnote {
     margin-top: 3em;
@@ -198,13 +257,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
   .entry-footer-section {
     margin: 0 15px;
-  }
-
-  :root *> & {
-    padding-left: 50px;
-  }
-  &, x:-moz-any-link {
-    padding-left: 0 !important;
   }
 
   .comment {
@@ -292,6 +344,16 @@ div#google_afc_user {
 .entry-inner::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+/* ===== STAR ===== */
+.hatena-star-container {
+  :root *> & {
+    margin-top: 0 !important;
+  }
+  &, x:-moz-any-link {
+    margin-top: 10px !important;
+  }
 }
 
 /* ===== ELEMENTS IN ENTRY ===== */

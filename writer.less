@@ -384,30 +384,26 @@ div#google_afc_user {
     max-width: 40em;
   }
 
-  pre.code,
-  .entry blockquote {
+  pre.code, blockquote {
     margin: 1em;
   }
 
-  .entry blockquote {
-    font-family: @font-family;
-    border: none;
-
+  blockquote {
     // for IE6-8
-    margin-left: 0;
-    margin-top: 1em;
+    margin: 1em 0;
+
+    border-radius: 0;
+    border: 1px solid #ccc;
 
     p {
       margin: 0;
     }
 
     :root *> & {
-      margin-left: 1em;
-      margin-top: 0;
+      margin: 0 auto 0 1em;
     }
     &, x:-moz-any-link {
-      margin-left: 0;
-      margin-top: 1em;
+      margin: 1em 0 !important;
     }
   }
 

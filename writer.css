@@ -414,26 +414,23 @@ div#google_afc_user x:-moz-any-link {
   max-width: 40em;
 }
 .entry-content pre.code,
-.entry-content .entry blockquote {
+.entry-content blockquote {
   margin: 1em;
 }
-.entry-content .entry blockquote {
-  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, Times, "Times New Roman", 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
-  border: none;
-  margin-left: 0;
-  margin-top: 1em;
+.entry-content blockquote {
+  margin: 1em 0;
+  border-radius: 0;
+  border: 1px solid #ccc;
 }
-.entry-content .entry blockquote p {
+.entry-content blockquote p {
   margin: 0;
 }
-:root * > .entry-content .entry blockquote {
-  margin-left: 1em;
-  margin-top: 0;
+:root * > .entry-content blockquote {
+  margin: 0 auto 0 1em;
 }
-.entry-content .entry blockquote,
-.entry-content .entry blockquote x:-moz-any-link {
-  margin-left: 0;
-  margin-top: 1em;
+.entry-content blockquote,
+.entry-content blockquote x:-moz-any-link {
+  margin: 1em 0 !important;
 }
 :root * > .entry-content a:hover {
   text-decoration: overline;

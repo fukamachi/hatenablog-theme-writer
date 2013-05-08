@@ -203,6 +203,7 @@ section {
 /* ===== ASIN ===== */
 .hatena-asin-detail p {
   text-indent: 0 !important;
+  -webkit-text-fill-color: #256fba !important;
 }
 :root * > .hatena-asin-detail {
   margin: 0;

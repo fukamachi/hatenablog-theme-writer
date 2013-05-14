@@ -425,6 +425,7 @@ div#google_afc_user x:-moz-any-link {
 }
 .entry-content blockquote p {
   margin: 0;
+  text-indent: 0;
 }
 :root * > .entry-content blockquote {
   margin: 0 auto 0 1em;

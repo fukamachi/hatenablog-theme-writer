@@ -273,6 +273,15 @@ section {
 .entry-content p {
   -webkit-text-fill-color: transparent;
 }
+.entry-content a {
+  -webkit-text-fill-color: #256fba;
+}
+.entry-content a:visited {
+  -webkit-text-fill-color: #7d9ab7;
+}
+.entry-content a:hover {
+  text-decoration: none;
+}
 .entry-content .footnote {
   margin-top: 3em;
   margin-right: 0;
@@ -403,7 +412,9 @@ div#google_afc_user x:-moz-any-link {
   max-height: 100%;
 }
 .entry-content a.keyword {
-  border: none;
+  border: 0;
+  border-right: 1px dotted #bbb;
+  -webkit-text-fill-color: black;
 }
 .entry-content pre.code {
   writing-mode: rl;
@@ -434,17 +445,20 @@ div#google_afc_user x:-moz-any-link {
 .entry-content blockquote x:-moz-any-link {
   margin: 1em 0 !important;
 }
-:root * > .entry-content a:hover {
-  text-decoration: overline;
-}
-.entry-content a:hover,
-.entry-content a:hover x:-moz-any-link {
-  text-decoration: underline !important;
-}
 :root * > .entry-content p {
   padding: 0 0.4em;
 }
 .entry-content p,
 .entry-content p x:-moz-any-link {
   padding: 0.4em 0 !important;
+}
+:root * > .entry-content ul,
+:root * > .entry-content ol {
+  margin-top: 1em;
+}
+.entry-content ul,
+.entry-content ol,
+.entry-content ul x:-moz-any-link,
+.entry-content ol x:-moz-any-link {
+  margin-top: 0 !important;
 }

@@ -235,6 +235,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -webkit-text-fill-color: transparent;
   }
 
+  a {
+    -webkit-text-fill-color: #256fba;
+    &:visited {
+      -webkit-text-fill-color: #7d9ab7;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
   .footnote {
     margin-top: 3em;
     margin-right: 0;
@@ -376,7 +386,9 @@ div#google_afc_user {
   }
 
   a.keyword {
-    border: none;
+    border: 0;
+    border-right: 1px dotted #bbb;
+    -webkit-text-fill-color: black;
   }
 
   pre.code {
@@ -409,20 +421,20 @@ div#google_afc_user {
     }
   }
 
-  a:hover {
-    :root *> & {
-      text-decoration: overline;
-    }
-    &, x:-moz-any-link {
-      text-decoration: underline !important;
-    }
-  }
   p {
     :root *> & {
       padding: 0 0.4em;
     }
     &, x:-moz-any-link {
       padding: 0.4em 0 !important;
+    }
+  }
+  ul, ol {
+    :root *> & {
+      margin-top: 1em;
+    }
+    &, x:-moz-any-link {
+      margin-top: 0 !important;
     }
   }
 }

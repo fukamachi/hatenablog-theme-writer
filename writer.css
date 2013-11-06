@@ -151,14 +151,14 @@ section {
   width: 100%;
   margin-top: 50px;
 }
-#box2 .hatena-follow-button-box {
+#box2 .hatena-follow-button-box.btn-subscribe {
   position: absolute;
   left: 200px;
   top: 10px;
   z-index: 9999;
   margin: 0;
 }
-#box2 .hatena-follow-button-box.btn-friend {
+#box2 .hatena-follow-button-box.btn-subscribe.btn-friend {
   left: 322px;
 }
 :root * > .hatena-module {
@@ -410,6 +410,12 @@ div#google_afc_user x:-moz-any-link {
   display: block;
   max-width: 100%;
   max-height: 100%;
+}
+.entry-content img.profile-icon {
+  display: inline;
+}
+.entry-content .hatenablog-circle img {
+  display: inline;
 }
 .entry-content a.keyword {
   border: 0;

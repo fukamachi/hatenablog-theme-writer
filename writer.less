@@ -263,8 +263,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .entry-footer {
   margin-top: 10px;
   .social-buttons {
-    margin: 0;
-    padding-left: 10px;
+    :root *> & {
+      margin: 0;
+      padding-left: 10px;
+    }
+    &, x:-moz-any-link {
+      margin: 10px 0 15px !important;
+      padding-left: 0 !important;
+    }
   }
   .entry-footer-section {
     margin: 0 15px;
@@ -338,6 +344,7 @@ div#google_afc_user {
 .hatena-star-container {
   :root *> & {
     margin-top: 0 !important;
+    margin-left: 10px !important;
   }
   &, x:-moz-any-link {
     margin-top: 10px !important;

@@ -344,33 +344,9 @@ div#google_afc_user,
 div#google_afc_user x:-moz-any-link {
   margin: 0 !important;
 }
-:root * > .permalink.pager {
-  position: relative;
+.permalink.pager {
   display: block;
-}
-:root * > .permalink.pager .pager-next {
-  position: absolute;
-  white-space: nowrap;
-  right: 240px;
-}
-:root * > .permalink.pager .pager-next,
-:root * > .permalink.pager .pager-next x:-moz-any-link {
-  position: static;
-  right: auto;
-}
-:root * > .permalink.pager .pager-prev {
-  position: absolute;
-  white-space: nowrap;
-  left: 240px;
-}
-:root * > .permalink.pager .pager-prev,
-:root * > .permalink.pager .pager-prev x:-moz-any-link {
-  position: static;
-  left: auto;
-}
-.permalink.pager,
-.permalink.pager x:-moz-any-link {
-  position: static;
+  text-align: center;
 }
 /* ===== ENTRY SCROLLBAR ==== */
 .entry-inner::-webkit-scrollbar {

@@ -192,7 +192,7 @@ section {
   -o-writing-mode: vertical-rl;
   font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, Times, "Times New Roman", 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
   -webkit-background-clip: text;
-  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.30000000000000004) 0, #000000 30px, #000000 690px, rgba(0, 0, 0, 0.30000000000000004));
+  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.3) 0, #000000 30px, #000000 690px, rgba(0, 0, 0, 0.3));
 }
 .entry-inner,
 .entry-inner x:-moz-any-link {
@@ -364,6 +364,10 @@ div#google_afc_user x:-moz-any-link {
 .entry-inner::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+/* ===== ARCHIVE ENTRY ===== */
+.archive-entry {
+  direction: ltr;
 }
 /* ===== STAR ===== */
 :root * > .hatena-star-container {

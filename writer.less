@@ -213,12 +213,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     }
   }
 
-  .categories a {
+  .categories {
     :root *> & {
-      padding: 10px 5px;
+      position: relative;
+      top: 5px;
     }
     &, x:-moz-any-link {
-      padding: 3px 10px;
+      position: static !important;
+    }
+  }
+  .categories a {
+    :root *> & {
+      padding: 8px 5px;
+    }
+    &, x:-moz-any-link {
+      padding: 5px 8px !important;
     }
   }
 

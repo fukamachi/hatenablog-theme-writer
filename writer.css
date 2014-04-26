@@ -258,12 +258,20 @@ section {
 .entry-header .entry-title a:hover x:-moz-any-link {
   text-decoration: underline !important;
 }
+:root * > .entry-header .categories {
+  position: relative;
+  top: 5px;
+}
+.entry-header .categories,
+.entry-header .categories x:-moz-any-link {
+  position: static !important;
+}
 :root * > .entry-header .categories a {
-  padding: 10px 5px;
+  padding: 8px 5px;
 }
 .entry-header .categories a,
 .entry-header .categories a x:-moz-any-link {
-  padding: 3px 10px;
+  padding: 5px 8px !important;
 }
 :root * > .entry-header .entry-header-menu {
   position: absolute;

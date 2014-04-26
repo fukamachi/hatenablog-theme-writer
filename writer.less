@@ -222,18 +222,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     }
   }
 
+  .entry-header-menu {
+    :root *> & {
+      position: absolute;
+      top: 100px;
+      right: -2px;
+    }
+    &, x:-moz-any-link {
+      position: static !important;
+    }
+  }
   .entry-header-menu a {
+    position: absolute;
     top: 40px;
     left: -65px;
     padding: 3px 10px;
     z-index: 1000;
 
     :root *> & {
-      top: 100px;
-      left: 36px;
-      padding: 20px 1px;
+      position: static;
+      display: inline-block;
+      padding: 20px 1px 20px 0;
     }
     &, x:-moz-any-link {
+      position: absolute !important;
       top: 40px !important;
       left: -65px !important;
       padding: 3px 10px !important;

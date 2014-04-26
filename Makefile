@@ -2,4 +2,4 @@ all: compile
 
 compile:
 	lessc writer.less > writer.css
-	lessc writer.less --yui-compress > writer-compressed.css
+	lessc writer.less --compress > writer-compressed.css

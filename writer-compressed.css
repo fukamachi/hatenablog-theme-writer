@@ -234,6 +234,23 @@ section {
   position: relative;
   line-height: 140%;
 }
+:root * > .entry-header .date {
+  margin-left: 5px;
+}
+.entry-header .date,
+.entry-header .date x:-moz-any-link {
+  margin-left: 0 !important;
+}
+.entry-header .entry-title {
+  line-height: 30px;
+}
+:root * > .entry-header .entry-title {
+  margin: 5px 0;
+}
+.entry-header .entry-title,
+.entry-header .entry-title x:-moz-any-link {
+  margin: 0 !important;
+}
 :root * > .entry-header .entry-title a:hover {
   text-decoration: overline;
 }

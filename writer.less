@@ -187,8 +187,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     color: #ccc;
     position: relative;
     line-height: 140%;
+    :root *> & {
+      margin-left: 5px;
+    }
+    &, x:-moz-any-link {
+      margin-left: 0 !important;
+    }
   }
 
+  .entry-title {
+    line-height: 30px;
+    :root *> & {
+      margin: 5px 0;
+    }
+    &, x:-moz-any-link {
+      margin: 0 !important;
+    }
+  }
   .entry-title a:hover {
     :root *> & {
       text-decoration: overline;

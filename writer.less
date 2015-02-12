@@ -142,12 +142,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -webkit-background-clip: text;
     background-image: -webkit-linear-gradient(right, fadeout(@font-color, 70%) 0, @font-color 30px, @font-color @vertical-width - 30px, fadeout(@font-color, 70%));
   }
-
-  &, x:-moz-any-link { // for Firefox
-    width: @horizontal-width !important;
-    height: auto !important;
-    overflow: visible !important;
-  }
 }
 
 /* ===== ASIN ===== */
@@ -159,17 +153,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   :root *> & { // except for IE6-8
     margin: 0;
   }
-  &, x:-moz-any-link { // for Firefox
-    margin: 1em 0;
-  }
   .hatena-asin-detail-image {
     :root *> & { // except for IE6-8
       margin-right: 10px;
       margin-bottom: 15px;
-    }
-    &, x:-moz-any-link { // for Firefox
-      margin-bottom: 0 !important;
-      margin-right: 15px !important;
     }
   }
   ul {
@@ -190,9 +177,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     :root *> & {
       margin-left: 5px;
     }
-    &, x:-moz-any-link {
-      margin-left: 0 !important;
-    }
   }
 
   .entry-title {
@@ -200,16 +184,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     :root *> & {
       margin: 5px 0;
     }
-    &, x:-moz-any-link {
-      margin: 0 !important;
-    }
   }
   .entry-title a:hover {
     :root *> & {
       text-decoration: overline;
-    }
-    &, x:-moz-any-link {
-      text-decoration: underline !important;
     }
   }
 
@@ -218,16 +196,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
       position: relative;
       top: 5px;
     }
-    &, x:-moz-any-link {
-      position: static !important;
-    }
   }
   .categories a {
     :root *> & {
       padding: 8px 5px;
-    }
-    &, x:-moz-any-link {
-      padding: 5px 8px !important;
     }
   }
 
@@ -236,9 +208,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
       position: absolute;
       top: 100px;
       right: -2px;
-    }
-    &, x:-moz-any-link {
-      position: static !important;
     }
   }
   .entry-header-menu a {
@@ -252,12 +221,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
       position: static;
       display: inline-block;
       padding: 20px 1px 20px 0;
-    }
-    &, x:-moz-any-link {
-      position: absolute !important;
-      top: 40px !important;
-      left: -65px !important;
-      padding: 3px 10px !important;
     }
   }
 }
@@ -288,10 +251,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
       margin-top: 0;
       margin-right: 3em;
     }
-    &, x:-moz-any-link {
-      margin-top: 3em;
-      margin-right: 0;
-    }
   }
 }
 
@@ -303,10 +262,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
       margin: 0;
       padding-left: 10px;
     }
-    &, x:-moz-any-link {
-      margin: 10px 0 15px !important;
-      padding-left: 0 !important;
-    }
   }
   .entry-footer-section {
     margin: 0 15px;
@@ -316,20 +271,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     :root *> & {
       margin-left: 15px;
     }
-    &, x:-moz-any-link {
-      margin-left: 0 !important;
-    }
 
     .entry-comment {
       :root *> & {
         border: none;
         border-right: 1px solid #DDD;
         padding: 0 8px;
-      }
-      &, x:-moz-any-link {
-        border: none !important;
-        border-bottom: 1px solid #DDD !important;
-        padding: 8px 0 !important;
       }
 
       .comment-content {
@@ -350,9 +297,6 @@ div#google_afc_user {
 
   :root *> & {
     margin: 0 1em 0 2em !important;
-  }
-  &, x:-moz-any-link {
-    margin: 0 !important;
   }
 }
 
@@ -387,9 +331,6 @@ div#google_afc_user {
   :root *> & {
     margin-top: 0 !important;
     margin-left: 10px !important;
-  }
-  &, x:-moz-any-link {
-    margin-top: 10px !important;
   }
 }
 
@@ -448,25 +389,16 @@ div#google_afc_user {
     :root *> & {
       margin: 0 auto 0 1em;
     }
-    &, x:-moz-any-link {
-      margin: 1em 0 !important;
-    }
   }
 
   p {
     :root *> & {
       padding: 0 0.4em;
     }
-    &, x:-moz-any-link {
-      padding: 0.4em 0 !important;
-    }
   }
   ul, ol {
     :root *> & {
       margin-top: 1em;
-    }
-    &, x:-moz-any-link {
-      margin-top: 0 !important;
     }
   }
 }

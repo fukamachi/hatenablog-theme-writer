@@ -240,7 +240,8 @@ section {
 :root * > .entry-header .entry-header-menu {
   position: absolute;
   top: 100px;
-  right: -2px;
+  right: 0;
+  white-space: nowrap;
 }
 .entry-header .entry-header-menu a {
   position: absolute;

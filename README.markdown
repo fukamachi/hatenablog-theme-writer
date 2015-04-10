@@ -1,6 +1,6 @@
 # 物書きのためのブログテーマ「Writer」 for はてなブログ
 
-![スクリーンショット](http://cdn.image.st-hatena.com/image/scale/d765f1505fc68ae48be0b3c2486946736d097e4c/height=460;version=1;width=620/http%3A%2F%2Fcdn.mogile.archive.st-hatena.com%2Fv1%2Fimage%2Fnitro_idiot%2F297798408501962090.png)
+![スクリーンショット](http://cdn.image.st-hatena.com/image/scale/5a3b5684650cccd691f368be520aa40bcd4c20bf/height=460;version=1;width=620/http%3A%2F%2Fcdn.mogile.archive.st-hatena.com%2Fv1%2Fimage%2Fnitro_idiot%2F171680195599394402.png)
 
 美しい日本語を意識して作った縦書きのテーマです。
 

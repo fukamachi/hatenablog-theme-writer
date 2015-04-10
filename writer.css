@@ -151,16 +151,6 @@ section {
   width: 100%;
   margin-top: 50px;
 }
-#box2 .hatena-follow-button-box.btn-subscribe {
-  position: absolute;
-  left: 200px;
-  top: 10px;
-  z-index: 9999;
-  margin: 0;
-}
-#box2 .hatena-follow-button-box.btn-subscribe.btn-friend {
-  left: 322px;
-}
 :root * > .hatena-module {
   float: left;
   width: 160px;

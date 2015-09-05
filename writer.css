@@ -299,6 +299,9 @@ section {
 .entry-content p {
   -webkit-text-fill-color: transparent;
 }
+.entry-content blockquote p {
+  -webkit-text-fill-color: #000000;
+}
 .entry-content a {
   -webkit-text-fill-color: #256fba;
 }

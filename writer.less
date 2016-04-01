@@ -131,12 +131,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -webkit-background-clip: text;
     background-image: -webkit-linear-gradient(right, fadeout(@font-color, 70%) 0, @font-color 30px, @font-color @vertical-width - 30px, fadeout(@font-color, 70%));
   }
-
-  &, x:-moz-any-link { // for Firefox
-    width: @horizontal-width !important;
-    height: auto !important;
-    overflow: visible !important;
-  }
 }
 
 /* ===== ASIN ===== */
@@ -440,9 +434,6 @@ div#google_afc_user {
     :root *> & {
       margin: 0 auto 0 1em;
     }
-    &, x:-moz-any-link {
-      margin: 1em 0 !important;
-    }
   }
 
   p {
@@ -458,93 +449,6 @@ div#google_afc_user {
       margin-top: 1em;
     }
     &, x:-moz-any-link {
-      margin-top: 0 !important;
-    }
-  }
-}
-
-/*
-  OS X の Chrome では縦書き表示に不具合がある。そのため一時的に該当ブラウザだけ横書き表示にする。
-  https://code.google.com/p/chromium/issues/detail?id=523691
-*/
-@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
-  .entry-inner {
-    -webkit-writing-mode: horizontal-tb !important;
-
-    width: @horizontal-width !important;
-    height: auto !important;
-    overflow: visible !important;
-  }
-  .hatena-asin-detail {
-    margin: 1em 0;
-    .hatena-asin-detail-image {
-      margin-bottom: 0 !important;
-      margin-right: 15px !important;
-    }
-  }
-  .entry-header {
-    .date {
-      margin-left: 0 !important;
-    }
-    .entry-title {
-      margin: 0 !important;
-    }
-    .entry-title a:hover {
-      text-decoration: underline !important;
-    }
-    .categories {
-      position: static !important;
-    }
-    .categories a {
-      padding: 5px 8px !important;
-    }
-    .entry-header-menu {
-      position: static !important;
-      a {
-        position: absolute !important;
-        top: 40px !important;
-        left: -65px !important;
-        padding: 3px 10px !important;
-      }
-    }
-  }
-  .entry-content {
-    .footnote {
-      margin-top: 3em;
-      margin-right: 0;
-    }
-  }
-  .entry-footer {
-    .social-buttons {
-      margin: 10px 0 15px !important;
-      padding-left: 0 !important;
-    }
-  }
-  .comment {
-    margin-left: 0 !important;
-    .entry-comment {
-      border: none !important;
-      border-bottom: 1px solid #DDD !important;
-      padding: 8px 0 !important;
-    }
-  }
-  div#google_afc_user {
-    margin: 0 !important;
-  }
-  .hatena-star-container {
-    margin-top: 10px !important;
-  }
-  .entry-content {
-    blockquote {
-      margin: 1em 0 !important;
-      p {
-        margin: 1em 0 !important;
-      }
-    }
-    p {
-      padding: 0.4em 0 !important;
-    }
-    ul, ol {
       margin-top: 0 !important;
     }
   }

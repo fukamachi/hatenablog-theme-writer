@@ -306,12 +306,13 @@ section {
   text-decoration: none;
 }
 .entry-content .footnote {
+  text-indent: 0;
   margin-top: 3em;
   margin-right: 0;
 }
 :root * > .entry-content .footnote {
   margin-top: 0;
-  margin-right: 3em;
+  margin-right: 1em;
 }
 .entry-content .footnote,
 .entry-content .footnote x:-moz-any-link {
